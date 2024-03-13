@@ -25,8 +25,8 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pd.read_pickle('movie_list.sav','rb')
-similarity = pd.read_pickle('similarity.pkl','rb')
+movies = pd.read_pickle("movie_list.sav")
+similarity = pd.read_pickle("similarity.pkl")
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
