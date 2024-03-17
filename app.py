@@ -2,16 +2,19 @@ import pickle
 import streamlit as st
 import requests
 import pandas as pd
-page_element="""
+# Set page config to wide layout
+st.set_page_config(layout="wide")
+# Set the background image
+bg_img = '''
 <style>
-[data-testid="stAppViewContainer"]{
-  background-image: url('photo.png');
-  background-size: cover;
+[data-testid="stAppViewContainer"] {
+background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17');
+background-size: cover;
+background-repeat: no-repeat;
 }
 </style>
-"""
-
-st.markdown(page_element, unsafe_allow_html=True)
+'''
+st.markdown(bg_img, unsafe_allow_html=True)
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
     data = requests.get(url)
