@@ -37,7 +37,7 @@ def recommend(movie):
     return recommended_movie_names,recommended_movie_posters
 
 
-st.header('black[Movie Recommender System]', divider='rainbow')
+st.header(':black[Movie Recommender System]', divider='rainbow')
 movies = pd.read_pickle("movie_list.sav")
 similarity = pd.read_pickle("similarity.pkl")
 
