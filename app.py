@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 bg_img = '''
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url('photo.png');
+background-image: url('https://downloader.la/temp/[Downloader.la]-65f6e4937c18d.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 }
