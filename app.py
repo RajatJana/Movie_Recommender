@@ -5,7 +5,7 @@ import pandas as pd
 page_element="""
 <style>
 [data-testid="stAppViewContainer"]{
-  background-image: url("photo.png");
+  background-image: url('photo.png');
   background-size: cover;
 }
 </style>
