@@ -2,16 +2,16 @@ import pickle
 import streamlit as st
 import requests
 import pandas as pd
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("photo.png");
-    }
-   </style>
-    """,
-    unsafe_allow_html=True
-)
+page_element="""
+<style>
+[data-testid="stAppViewContainer"]{
+  background-image: url("photo.png");
+  background-size: cover;
+}
+</style>
+"""
+
+st.markdown(page_element, unsafe_allow_html=True)
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
     data = requests.get(url)
