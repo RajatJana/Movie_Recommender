@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 bg_img = '''
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17');
+background-image: url('photo.png');
 background-size: cover;
 background-repeat: no-repeat;
 }
